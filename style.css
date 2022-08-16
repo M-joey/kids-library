@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(182, 247, 252);
+  background-image: radial-gradient(white 2px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+
+}
+
+a {
+  cursor: pointer;
+
+}
+
+/* 
+header
+*/
+
+header {
+  /* width: 80%; */
+  padding-left: 20%;
+  height: 250px;
+  background: rgb(182, 247, 252);
+  background-image: radial-gradient(white 2px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+  margin: 0 auto;
+  display: flex;
+}
+header > img {
+  width: 10%;
+}
+.header-image {
+  padding: 80px 0 0 80px;
+}
+.header-image h1 {
+  color: blue;
+
+}
+.header-image h2 {
+  color: cornflowerblue;
+  font-size: 20px;
+}
+
+/* 
+tab
+*/
+.tab{
+  width: 960px;
+  margin: 0 auto;
+}
+.tab-nav{
+  display: flex;
+}
+.tab-nav-item.is-active{
+  background: rgb(124, 235, 243);
+  color: black;
+  font-weight: bold;
+  /* border: 1px solid #fff; */
+}
+.tab-nav-item{
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px 5px 0 0;
+  margin-right: 2px;
+}
+.tab-contents{
+  /* border: 1px solid #fff; */
+  padding: 20px;
+  background-color: rgb(124, 235, 243);
+}
+.tab-contents-item{
+  display: none;
+  background-color: rgb(124, 235, 243);
+}
+
+/* 
+ul
+ */
+ul {
+  background-color: rgb(124, 235, 243);
+  background-image: none;
+}
+ul > li {
+  padding-bottom:  80px;
+
+}
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.youtube{
+  padding-bottom: 20px;
+}
+/* .youtube > iframe{} */
+.shopping {
+  font-size: 18px;
+  padding-bottom: 20px;
+
+}
+.shopping > a {
+  text-decoration: none;
+  color: blue;
+}
+.shopping > a:hover {
+  font-weight: 800;
+}
+ 
+.comment {}
