@@ -84,7 +84,7 @@ header .wrapper > img {
 @media screen and (max-width: 600px) {
   .header-image h2 {
     padding-top: 20px;
-    width: 400px;
+    width: 350px;
     font-size: 17px;
   }
 }
@@ -169,7 +169,6 @@ tab
 @media screen and (max-width: 1200px) {
   .tab{
     width: 760px;
-    background-color: purple;
   }
   .tab-contents{
     padding: 42px;
@@ -178,16 +177,12 @@ tab
 @media screen and (max-width: 840px) {
 .tab{
   width:90%;
-  background-color: yellow;
 }
 .tab-contents{
   padding: 42px;
 }
 } 
 @media screen and (max-width: 600px) {
-  .tab{
-    background-color: green;
-  }
   .tab-contents{
     padding: 20px;
   }
