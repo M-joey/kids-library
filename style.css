@@ -176,7 +176,7 @@ tab
 } 
 @media screen and (max-width: 840px) {
 .tab{
-  width:90%;
+  width:100%;
 }
 .tab-contents{
   padding: 42px;
@@ -184,7 +184,7 @@ tab
 } 
 @media screen and (max-width: 600px) {
   .tab-contents{
-    padding: 20px;
+    padding: 14px;
   }
   .tab-contents-item > h3 {
     font-size: 26px;
@@ -192,19 +192,6 @@ tab
     padding-top: 20px;
   }
 
-} 
-@media screen and (max-width: 400px) {
-  .tab{
-    width: 360px;
-  }
-  .tab-contents{
-    padding: 20px;
-  }
-  .tab-contents-item > h3 {
-    font-size: 26px;
-    height: 80px;
-    padding-top: 20px;
-  }
 } 
 
 /* 
@@ -220,6 +207,7 @@ ul
   padding:  40px;
   margin: 20px 0;
 }
+
 .title{
   font-size: 20px;
   padding-bottom: 20px;
