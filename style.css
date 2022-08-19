@@ -44,17 +44,7 @@ header .wrapper > img {
   font-size: 24px;
 }
 @media screen and (max-width: 1200px) {
-  header {
-    padding: 0 30px;
-  }
-  .header-image h2 {
-    color: rgb(247, 247, 10);
-    font-size: 20px;
-    width: 650px;
-  }
-}
-@media screen and (max-width: 840px) {
-  header .wrapper > img {
+header .wrapper > img {
     width: 8%;
   }
   .header-image {
@@ -71,13 +61,13 @@ header .wrapper > img {
     width: 520px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 840px) {
   header {
     height: 250px;
     font-family: 'M PLUS Rounded 1c';
   }
   .header-title {
-    padding: 50px 0;
+    padding: 50px ;
     margin: 0;
     display: block;
     align-items: flex-start;
@@ -87,12 +77,21 @@ header .wrapper > img {
   }
   .header-image h2 {
     padding-top: 20px;
-    width: 350px;
+    width: 500px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-image h2 {
+    padding-top: 20px;
+    width: 400px;
     font-size: 17px;
   }
 }
 
-
+/*
+main
+ */
 main {
   font-family:'Zen Kaku Gothic New', sans-serif;
    background: linear-gradient(#42B3DD, #fff, #42B3DD, #fff);
@@ -168,38 +167,37 @@ tab
   }
 }
 @media screen and (max-width: 1200px) {
-  .tab-nav-item.is-active{
-    font-size: 16px;
-  }
-  .tab-nav-item{
-    font-size: 16px;
-    padding: 6px;
-  }
-  .tab-contents{
-    padding: 12px;
-  }
-  .tab-contents-item > h3 {
-    font-size: 30px;
-    height: 100px;
-    padding-top: 40px;
-  }
-} 
-@media screen and (max-width: 840px) {
   .tab{
     width: 760px;
+    background-color: purple;
   }
   .tab-contents{
     padding: 42px;
   }
 } 
-/* @media screen and (max-width: 620px) {
+@media screen and (max-width: 840px) {
+.tab{
+  width:90%;
+  background-color: yellow;
+}
+.tab-contents{
+  padding: 42px;
+}
+} 
+@media screen and (max-width: 600px) {
   .tab{
-    width: 400px;
+    background-color: green;
   }
   .tab-contents{
-    padding: 30px;
+    padding: 20px;
   }
-}  */
+  .tab-contents-item > h3 {
+    font-size: 26px;
+    height: 80px;
+    padding-top: 20px;
+  }
+
+} 
 @media screen and (max-width: 400px) {
   .tab{
     width: 360px;
@@ -213,8 +211,6 @@ tab
     padding-top: 20px;
   }
 } 
-
-
 
 /* 
 ul
@@ -232,6 +228,14 @@ ul
 .title{
   font-size: 20px;
   padding-bottom: 20px;
+}
+.booktitle{
+  font-size: 20px;
+  font-weight: 800;
+}
+.bookauthor{
+  font-size: 16px;
+  padding: 6px 10px;
 }
 .youtube{
   padding-bottom: 20px;
@@ -261,9 +265,13 @@ ul
     height: auto;
   }
 }
-/* @media screen and (max-width: 840px) {
-} */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 840px) {
+  .youtube > iframe{
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
   .title{
     font-size: 16px;
   }
@@ -313,8 +321,7 @@ dt {
 dd{
   font-size: 14px;
 }
-/* .ad-list{ 
-} */
+/* .ad-list{} */
 .ad-list >li {
   list-style: none;
   padding: 5px 0;
@@ -341,7 +348,7 @@ dd{
     width: 250px;
   }
 }
-  @media screen and (max-width: 834px) {
+@media screen and (max-width: 834px) {
   .sidebar {
     width: 80%;
     margin: 40px auto;
@@ -357,7 +364,7 @@ dd{
     height: 100%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .sidebar {
     width: 360px;
     margin: 60px auto;
@@ -368,8 +375,7 @@ dd{
     padding: 20px;
     margin-bottom: 60px;
   }
-  /* .sidebar-content > iframe {
-  } */
+  /* .sidebar-content > iframe {} */
   dl {
     display:block;
   }
