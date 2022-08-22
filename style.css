@@ -11,7 +11,7 @@ a:hover {
   font-weight: bold;
 }
 .wrapper {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -58,7 +58,7 @@ header .wrapper > img {
   .header-image h2 {
     color: rgb(247, 247, 10);
     font-size: 20px;
-    width: 520px;
+/*     width: 520px; */
   }
 }
 @media screen and (max-width: 840px) {
@@ -77,14 +77,14 @@ header .wrapper > img {
   }
   .header-image h2 {
     padding-top: 20px;
-    width: 500px;
+/*     width: 500px; */
     font-size: 17px;
   }
 }
 @media screen and (max-width: 600px) {
   .header-image h2 {
     padding-top: 20px;
-    width: 350px;
+/*     width: 350px; */
     font-size: 17px;
   }
 }
