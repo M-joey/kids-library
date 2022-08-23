@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* body {} */
 a {
   cursor: pointer;
 }
@@ -43,6 +42,75 @@ header .wrapper > img {
   color: rgb(247, 247, 10);
   font-size: 24px;
 }
+/*  before clicked */
+#navi {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #fff;
+  display: none;
+}
+.header-navlist {
+  padding: 20px;
+}
+.header-navitem {
+  list-style: none;
+}
+.header-navitem:hover {
+  background-color: rgb(247, 247, 10, 0.3);
+}
+.header-navitem a {
+  display: block;
+  text-decoration: none;
+  color: #42B3DD;
+  padding: 1rem;
+}
+
+/* 
+hamburger
+ */
+ .hamburger {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  width: 40px;
+  height: 35px;
+  background-color: #42B3DD;
+  border: 2px solid #fff;
+  display: none;
+  cursor: pointer;
+ }
+ .menu-button {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ span {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+ }
+
+ @media screen and (max-width: 840px) {
+  #navi {
+    display: none;
+    transition: 0.5s
+  }
+  /* after clicked */
+  #navi.open {
+    display: flex;
+  }
+  .hamburger,
+  .menu-button {
+   display: flex;
+  }
+}
+
 @media screen and (max-width: 1200px) {
 header .wrapper > img {
     width: 8%;
@@ -58,7 +126,6 @@ header .wrapper > img {
   .header-image h2 {
     color: rgb(247, 247, 10);
     font-size: 20px;
-/*     width: 520px; */
   }
 }
 @media screen and (max-width: 840px) {
@@ -77,28 +144,26 @@ header .wrapper > img {
   }
   .header-image h2 {
     padding-top: 20px;
-/*     width: 500px; */
     font-size: 17px;
   }
+
 }
 @media screen and (max-width: 600px) {
   .header-image h2 {
     padding-top: 20px;
-/*     width: 350px; */
     font-size: 17px;
   }
 }
 
 /*
 main
- */
+*/
 main {
   font-family:'Zen Kaku Gothic New', sans-serif;
    background: linear-gradient(#42B3DD, #fff, #42B3DD, #fff);
    padding: 80px 4%;
    display: flex;
    justify-content: center;
-   
 }
 @media screen and (max-width: 1500px) {
   main {
@@ -191,7 +256,6 @@ tab
     height: 80px;
     padding-top: 20px;
   }
-
 } 
 
 /* 
