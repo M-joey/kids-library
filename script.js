@@ -1,11 +1,27 @@
 (()=>{
+// ハンバーガーメニュー
+  const toggleButton = document.getElementsByClassName('hamburger')[0];
+  const navbarLinks = document.getElementById('navi');
+  const navItem = document.querySelectorAll('[data-ham]');
+// クリックしたらnaviが開く
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('open');
+  });
+// aタグをクリックしたらnaviが消える
+  let itemIndex = 0;
+  while (itemIndex < navItem.length){
+    navItem[itemIndex].addEventListener('click', () => {
+      navbarLinks.classList.remove('open');
+    });
+    itemIndex++;
+  }
 
+//  タブ
   const $tab = document.getElementById('js-tab');
   const $nav = $tab.querySelectorAll('[data-nav');
   const $contents = $tab.querySelectorAll('[data-contents]')
   const ACTIVE_CLASS = 'is-active';
   const navLen = $nav.length;
-  
 
   const init = () => {
     $contents[0].style.display = 'block';
@@ -35,13 +51,5 @@
     index++;
   }
 
-
-
-  const book = [
-    {
-      title: 'DO NOT OPEN THIS BOOK AGAIN By Andy Lee & Illustrated By Heath McKenzie',
-      youtube: '<iframe width="560" height="315" src="https://www.youtube.com/embed/N8XDGi0rPmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    }
-  ];
   
 })();
