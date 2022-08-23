@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M's Kids Library</title>
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +25,34 @@
         <h2>オーストラリアに住む本が苦手な男の子でも好きになった英語の絵本を学年別に紹介しています。</h2>
       </div>
     </div>
+<!-- hamburger menu -->
+    <nav id="navi">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="index.html" data-ham="0">ホーム</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#link-about" data-ham="1">M's Kids Libraryについて</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#link-movie" data-ham="2">教育動画</a>
+        </li>
+        <li class="header-navitem">
+          <a href="link-ad" data-ham="3">英語学習サイト</a>
+        </li>
+      </ul>
+    </nav>
+<!-- hamburger -->
+    <div class="hamburger">
+      <div class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
   
   <main>
-    
-      
     <div class="tab" id="js-tab">
       <div class="tab-nav">
         <a class="tab-nav-item is-active" data-nav="0">小学2年生</a>
@@ -39,7 +62,7 @@
     
       <div class="tab-contents">
         <!-- 小学2年生 --> 
-        <ul class="tab-contents-item" data-contents="0">
+        <ul class="tab-contents-item" id="link-two" data-contents="0">
           <h3>小学2年生のお気に入り</h3>
           <li class="smart-cookie">
             <div class="title">
@@ -133,7 +156,7 @@
         </ul>
       
       <!-- 小学1年生 -->     
-      <ul class="tab-contents-item" data-contents="1">
+      <ul class="tab-contents-item" id="link-one" data-contents="1">
         <h3>小学1年生のお気に入り</h3>
         <li class="cranky-bear">
           <div class="title">
@@ -181,8 +204,8 @@
           </div>
           <div class="comment">ピラニアの面白おかしい絵の本で何度も読んだ本です。</div>
           <div class="youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/yDlmiuIfVEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <!-- <div class="shopping">アマゾンで買うなら<a href="https://www.amazon.co.jp/Dear-Zoo-Friends/dp/141694737X/ref=sr_1_1?keywords=dear+zoo&qid=1660629719&sprefix=dear+%2Caps%2C266&sr=8-1">こちら</a></div> -->
-          <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15964557%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19674673%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7133/9781338297133_1_2.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15964557%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19674673%252F" rel="nofollow">Piranhas Don't Eat Bananas PIRANHAS DONT EAT BANANAS [ Aaron Blabey ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">2,376円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:18時点)</span><br/><span style="font-weight:bold;">感想(0件)</span></p></td></tr></tbody></table>
+          <div class="shopping">アマゾンで買うなら<a href="https://www.amazon.co.jp/Dear-Zoo-Friends/dp/141694737X/ref=sr_1_1?keywords=dear+zoo&qid=1660629719&sprefix=dear+%2Caps%2C266&sr=8-1">こちら</a></div> 
+         <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15964557%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19674673%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7133/9781338297133_1_2.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F15964557%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19674673%252F" rel="nofollow">Piranhas Don't Eat Bananas PIRANHAS DONT EAT BANANAS [ Aaron Blabey ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">2,376円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:18時点)</span><br/><span style="font-weight:bold;">感想(0件)</span></p></td></tr></tbody></table>
           <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT" alt="">
         </li>
         <li class="bear-hunt">
@@ -199,13 +222,13 @@
           <div class="shopping">
             アマゾンで買うなら<a href="https://www.amazon.co.jp/Were-Going-Bear-Michael-Rosen/dp/0744523230/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1GAD7SWJQC3QD&keywords=We%E2%80%99re+Going+On+a+Bear+Hunt&qid=1660631453&sprefix=we+re+going+on+a+bear+hunt%2Caps%2C396&sr=8-1">こちら</a>
           </div>
-          <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16061888%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19783750%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6426/9781534456426.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16061888%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19783750%252F" rel="nofollow">WE'RE GOING ON A BEAR HUNT(P) [ MICHAEL/OXENBURY ROSEN, HELEN ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">1,584円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:18時点)</span><br/><span style="font-weight:bold;">感想(1件)</span></p></td></tr></tbody></table>
+           <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16061888%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19783750%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6426/9781534456426.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F16061888%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F19783750%252F" rel="nofollow">WE'RE GOING ON A BEAR HUNT(P) [ MICHAEL/OXENBURY ROSEN, HELEN ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">1,584円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:18時点)</span><br/><span style="font-weight:bold;">感想(1件)</span></p></td></tr></tbody></table>
           <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT" alt="">
         </li>
       </ul>
       
       <!-- キンディー --> 
-      <ul class="tab-contents-item" data-contents="2">
+      <ul class="tab-contents-item" id="link-kindy" data-contents="2">
         <h3>幼稚園年長のお気に入り</h3>
         <li class="caterpillar">
           <div class="title">
@@ -255,7 +278,7 @@
           <div class="shopping">
             アマゾンで買うなら<a href="https://www.amazon.co.jp/Dont-Let-Pigeon-Drive-Bus/dp/1844285138/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3QQ7UMNHD8HNM&keywords=Don%27t+Let+the+Pigeon+Drive+the+Bus+Read+Aloud&qid=1660630071&sprefix=don%27t+let+the+pigeon+drive+the+bus+read+aloud%2Caps%2C231&sr=8-1">こちら</a>
           </div>
-          <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F4198348%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F11944778%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9881/9780786819881_1_3.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F4198348%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F11944778%252F" rel="nofollow">DON'T LET THE PIGEON DRIVE THE BUS!(H) [ MO WILLEMS ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">2,692円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:21時点)</span><br/><span style="font-weight:bold;">感想(0件)</span></p></td></tr></tbody></table>
+         <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:300px;"><tbody><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:44px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F4198348%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F11944778%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9881/9780786819881_1_3.jpg?_ex=64x64" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00q0724.2bo11c45.g00q0724.2bo12179%2Fa22081726834_3NGVLG_BDM8Z6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fbook%252F4198348%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fbook%252Fi%252F11944778%252F" rel="nofollow">DON'T LET THE PIGEON DRIVE THE BUS!(H) [ MO WILLEMS ]</a></p><p style="color:#666; margin-top:5px line-height:1.5;">価格:<span style="font-size:14px; color:#C00; font-weight:bold;">2,692円</span><br/><span style="font-size:10px; font-weight:normal;">(2022/8/17 15:21時点)</span><br/><span style="font-weight:bold;">感想(0件)</span></p></td></tr></tbody></table>
           <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3NGVLG+BDM8Z6+2HOM+BWGDT" alt="">
         </li>
       </ul>
@@ -263,11 +286,11 @@
     </div>
 
     <div class="sidebar">
-      <div class="about">
+      <div class="about" id="link-about">
         <h3 class="sidebar-title">M's Kids Libraryについて</h3>
         <div class="sidebar-content">オーストラリア在住歴まもなく20年。日本人の夫と長男中学生、次男小学生を持つ4人家族。運動が好きな息子が最近英語の絵本に興味を持ち始めたので、日本人家庭のお子さんにどんな英語の絵本を見せたらいいか分からない方に情報を共有したいと思っています。</div>
       </div>
-      <div class="renew">
+      <div class="renew" id="link-movie">
         <h3 class="sidebar-title">英語教育動画</h3>
         <div class="sidebar-content">
           <dl>
@@ -293,10 +316,10 @@
         </div>
       </div>
       <!-- 広告 -->
-      <div class="ad">
+      <div class="ad" id="link-ad">
         <h3 class="sidebar-title">英語学習サイト</h3>
         <div class="sidebar-content"> 
-          <ul class="ad-list">
+           <ul class="ad-list">
             <li>
               <a href="https://px.a8.net/svt/ejp?a8mat=3NGVLH+DH8ASY+45WY+609HT" rel="nofollow">
                 <img border="0" width="320" height="50" alt="" src="https://www28.a8.net/svt/bgt?aid=220817141815&wid=001&eno=01&mid=s00000019429001009000&mc=1"></a>
@@ -307,8 +330,7 @@
                 <img border="0" width="320" height="50" alt="" src="https://www22.a8.net/svt/bgt?aid=220818152616&wid=001&eno=01&mid=s00000019598001005000&mc=1"></a>
                 <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3NGWDK+A6R1F6+477W+5ZEMP" alt="">
             </li>
-           
-          </ul>
+          </ul> 
       </div>
       </div>
     </div>
