@@ -69,6 +69,12 @@ header .wrapper > img {
   color: #42B3DD;
   padding: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .header-title.wrapper {
+    padding: 25px;
+  }
+ 
+}
 
 /* 
 hamburger
@@ -390,10 +396,13 @@ ul
   .title{
     font-size: 16px;
   }
+  .book-img {
+    width: 100%;
+  }
   .shopping button{
     margin-top: 20px;
-    margin-right: 10px;
-    width: 100px;
+    margin-right: 4px;
+    width: 89px;
     height: 50px;
   }
   .shopping p {
