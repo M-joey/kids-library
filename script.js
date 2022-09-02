@@ -50,5 +50,32 @@
     $nav[index].addEventListener('click', (e) => handleClick(e));
     index++;
   }
+
+  //navメニューをクリックすると対象タブとコンテンツに切り替わる
+  navItem[0].addEventListener('click', () => {
+    $nav[1].classList.remove(ACTIVE_CLASS);
+    $nav[2].classList.remove(ACTIVE_CLASS);
+    $nav[0].classList.add(ACTIVE_CLASS);
+    $contents[1].style.display = "none";
+    $contents[2].style.display = "none";
+    $contents[0].style.display = "block";
+  })
+  navItem[1].addEventListener('click', () => {
+    $nav[0].classList.remove(ACTIVE_CLASS);
+    $nav[2].classList.remove(ACTIVE_CLASS);
+    $nav[1].classList.add(ACTIVE_CLASS);
+    $contents[0].style.display = "none";
+    $contents[2].style.display = "none";
+    $contents[1].style.display = "block";
+  })
+  navItem[2].addEventListener('click', () => {
+    $nav[0].classList.remove(ACTIVE_CLASS);
+    $nav[1].classList.remove(ACTIVE_CLASS);
+    $nav[2].classList.add(ACTIVE_CLASS);
+    $contents[0].style.display = "none";
+    $contents[1].style.display = "none";
+    $contents[2].style.display = "block";
+  })
+
   
 })();
