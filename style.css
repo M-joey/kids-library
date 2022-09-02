@@ -211,7 +211,7 @@ tab
 }
 .tab-contents{
   border-radius: 0 4px 0 0;
-  padding: 20px;
+  padding: 0 20px;
   background-color: #fff;
 }
 .tab-contents-item > h3 {
@@ -222,7 +222,7 @@ tab
   text-shadow: 2px 2px 6px rgb(248, 250, 134);
   text-align: center;
   height: 160px;
-  padding-top: 50px;
+  padding: 50px 0 30px;
   background-color:#fff;
   background-image: radial-gradient(#bdebfc 8%, transparent 16%),
   radial-gradient(#fad8ec  8%, transparent 16%);
@@ -247,26 +247,15 @@ tab
   .tab{
     width: 760px;
   }
-  .tab-contents{
-    padding: 42px;
-  }
 } 
 @media screen and (max-width: 840px) {
 .tab{
   width:100%;
 }
-.tab-contents{
-  padding: 42px;
-}
 } 
 @media screen and (max-width: 600px) {
-  .tab-contents{
-    padding: 14px;
-  }
   .tab-contents-item > h3 {
     font-size: 24px;
-    height: 80px;
-    padding-top: 20px;
   }
 } 
 
@@ -364,8 +353,9 @@ ul
 }
 .youtube {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  
 }
 .youtube:hover {
   background-color: #ccc;
@@ -373,7 +363,6 @@ ul
 .youtube a svg {
   color: #fff;
   padding-top: 5px;
-  padding-left: 10px;
   width: 40px;
 }
 @media screen and (max-width: 1200px) {
@@ -381,15 +370,19 @@ ul
     padding:  20px;
     margin: 10px 0;
   }
-  .youtube > iframe{
-    width: 400px;
-    height: auto;
+  .shopping button{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
   }
 }
 @media screen and (max-width: 840px) {
-  .youtube > iframe{
-    width: 300px;
-    height: auto;
+  .shopping button{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -400,9 +393,8 @@ ul
     width: 100%;
   }
   .shopping button{
-    margin-top: 20px;
     margin-right: 4px;
-    width: 80px;
+    width: 70px;
     height: 50px;
   }
   .shopping p {
@@ -420,6 +412,10 @@ sidebar
 }
 .about,
 .shopping {
+  padding-top: 100px;
+}
+.about,
+.shopping {
   position: relative;
 }
 .sidebar-title{
@@ -431,7 +427,7 @@ sidebar
   display: inline;
   padding: 5px 10px;
   position: absolute;
-  top: -26px;
+  top: 80px;
 }
 .sidebar-content {
   border: 2px dotted rgb(247, 247, 10);
