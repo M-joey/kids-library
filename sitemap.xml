@@ -10,9 +10,9 @@
     <url>
       <loc>https://m-joey.github.io/kids-library/{{ post.url }}</loc>
       {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <lastmod>2022.09.20</lastmod>
       {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        <lastmod>2022.09.20</lastmod>
       {% endif %}
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
@@ -22,7 +22,7 @@
   <url>
     <loc>https://m-joey.github.io/kids-library/{{ page.url }}</loc>
     {% if page.sitemap.lastmod %}
-      <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      <lastmod>2022.09.20</lastmod>
     {% elsif page.lastmod %}
       <lastmod>{{ page.lastmod | date: "%Y-%m-%d" }}</lastmod>
     {% elsif page.date %}
